@@ -29,13 +29,15 @@ main {
 
 .card {
   background-color: var(--grey-900);
-  padding: 2rem;
-  border-radius: 1rem;
+  padding: 30px;
+  border-radius: 16px;
   width: 320px;
-  height: 300px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
   color: white;
-  gap: 1rem;
 }
 
 .star-container {
@@ -46,6 +48,24 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 15px;
+}
+
+.star-container img {
+  width: 14px;
+  height: 14px;
+}
+
+.card h1 {
+  font-size: 20px;
+  font-weight: 500;
+  color: white;
+}
+
+.card p {
+  font-size: 14px;
+  color: var(--grey-500);
+  line-height: 1.5;
 }
 
 .rating-container {
@@ -76,11 +96,15 @@ main {
   background-color: var(--orange-500);
   color: var(--grey-900);
   font-weight: 700;
-  border-radius: 15px;
+  letter-spacing: 2px;
+  border-radius: 20px;
   border: none; 
-  padding: 0.5rem 1rem;
+  padding: 11px 0 ;
+  margin-top: 16px;
   cursor: pointer;
   width: 100%;
+  text-transform: uppercase;
+  font-size: 13px;
   transition: background-color 0.3s, color 0.3s;
 }
 
