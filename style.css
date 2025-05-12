@@ -28,6 +28,7 @@ main {
 }
 
 .card {
+  max-width: 320px;
   background-color: var(--grey-900);
   padding: 30px;
   border-radius: 16px;
