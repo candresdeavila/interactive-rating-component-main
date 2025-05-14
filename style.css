@@ -32,7 +32,7 @@ main {
   background-color: var(--grey-900);
   padding: 30px;
   border-radius: 16px;
-  width: 320px;
+  
   height: auto;
   display: flex;
   flex-direction: column;
@@ -67,6 +67,7 @@ main {
   font-size: 14px;
   color: var(--grey-500);
   line-height: 1.5;
+  margin: 0;
 }
 
 .rating-container {
@@ -114,6 +115,53 @@ main {
   color: var(--grey-900);
 }
 
-.thank-you-container {
-  display: none;
+.rating-button.active {
+  background-color: var(--orange-500);
+  color: var(--white);
 }
+
+.thank-you-container {
+  display: none; /* luego se cambia a flex por JS */
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.thank-you-card {
+  background: linear-gradient(to bottom, #232a34, #181e27);
+  border-radius: 20px;
+  padding: 30px;
+  width: 320px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  color: white;
+}
+
+.thank-you-illustration {
+  width: 150px;
+  margin-bottom: 10px;
+}
+
+.thank-you-rating {
+  background-color: var(--grey-900);
+  color: var(--orange-500);
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+}
+
+.thank-you-card h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--white);
+}
+
+.thank-you-card p:last-of-type {
+  font-size: 0.9rem;
+  color: var(--grey-500);
+  line-height: 1.4;
+}
+
